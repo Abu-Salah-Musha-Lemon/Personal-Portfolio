@@ -582,12 +582,17 @@ main{
 	height: 100%;
 	margin-bottom: 30px;
 }
-.edu i a{
+.edu .bass {
+	margin-bottom:40px ;
+}
+.bass i, a, h2, h3, p{
 	color: white;
 	font-size: 20px;
 	font-weight: 400;
-	text-transform: uppercase;
-	padding: 20px 0;
+	text-transform: capitalize;
+	padding: 4px 0;
+	font-family: 'Lato', sans-serif;
+
 }
 .lemon{
 	position:static ;
