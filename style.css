@@ -557,8 +557,10 @@ main{
 	height: 100%;
 	margin-bottom: 30px;
 }
-.edu i{
+.edu i a{
+	color: white;
 	font-size: 20px;
+	font-weight: 400;
 	text-transform: uppercase;
 	padding: 20px 0;
 }
