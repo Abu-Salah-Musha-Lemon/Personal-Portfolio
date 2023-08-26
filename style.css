@@ -512,6 +512,7 @@ main{
 	align-items: center;
 	border-bottom: 1px solid rgba(255, 255, 255, .4);
 	position: relative;
+	padding: 20px;
 }
 .img{
 	width: 400px;
@@ -554,6 +555,7 @@ main{
 .exp,.edu{
 	width: 50%;
 	height: 100%;
+	margin-bottom: 30px;
 }
 .edu i{
 	font-size: 20px;
