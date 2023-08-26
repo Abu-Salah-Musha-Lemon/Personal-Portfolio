@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-	position: fixed;
+position: sticky;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -461,11 +461,13 @@ body {
 
 /* about section  */
 main{
-	position: inherit;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	height: 100vh;
+}
+.top{
+	text-align: center;
 }
 .top h1{
 	
@@ -480,7 +482,7 @@ main{
 	line-height: 1.2;
 	position: relative;
 	margin: 10px  10px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .top p::before{
 	content: '';
@@ -509,6 +511,7 @@ main{
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid rgba(255, 255, 255, .4);
+	position: relative;
 }
 .img{
 	width: 400px;
@@ -524,8 +527,8 @@ main{
 	margin: 40px;
 
 }
-.info01 label, .info02{
-	font-size: 30px;
+.info01 label, .info02 label{
+	font-size: 20px;
 	font-weight: 600;
 	text-transform:capitalize;
 	padding: 10px;
@@ -556,4 +559,8 @@ main{
 	font-size: 20px;
 	text-transform: uppercase;
 	padding: 20px 0;
+}
+.lemon{
+	position:static ;
+	border: 1px solid  #3cf;
 }
