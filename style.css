@@ -252,21 +252,20 @@ position: sticky;
 
 .home_sci a:nth-child(1) {
 	opacity: 0;
-	animation: slideBottom 1s ease forwards;
-	animation-delay: 2.1s;
+	animation: slideBottom 2s ease forwards;
+	animation-delay: 3.1s;
 }
 
 .home_sci a:nth-child(2) {
 	opacity: 0;
-	animation: slideRigth 1s ease forwards;
-	animation-delay: 2.1s;
+	animation: slideRigth 2s ease forwards;
+	animation-delay: 3.25s;
 }
 
 .home_sci a:nth-child(3) {
 	opacity: 0;
-	animation: slideTop 1s ease forwards;
-
-	animation-delay: 2.1s;
+	animation: slideTop 2s ease forwards;
+	animation-delay: 3.5s;
 }
 
 .home_sci a::after {
