@@ -40,7 +40,8 @@ position: sticky;
 	font-size: 40px;
 	color: white;
 	font-weight: 600;
-	pointer-events: none;
+	/* pointer-events: none; */
+	cursor: pointer;
 	opacity: 0;
 	animation: slideTop 1s ease forwards;
 
