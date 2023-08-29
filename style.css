@@ -606,9 +606,19 @@ footer>.home_sci a {
 	border: 1px solid #3cf;
 }
 
-
-
-
+/* skill  */
+.skill{
+	display: flex;
+	flex-direction:column;
+	margin: 20px;
+}
+.skill h2{
+	font-weight: 900;
+	left: 0;
+}
+.skill a{
+	display: inline-block;
+}
 @keyframes slideBottom {
 	0% {
 		opacity: 0;
