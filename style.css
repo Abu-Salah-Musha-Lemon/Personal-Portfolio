@@ -20,6 +20,7 @@ body {
 	background: #0c1022;
 	color: white;
 }
+
 /* .container{
 	width: 100%;
 	display: inline-block;
@@ -411,7 +412,8 @@ body {
 	/* max-width: 350px; */
 	object-fit: cover;
 }
- /* home end */
+
+/* home end */
 
 
 /* about section  */
@@ -441,7 +443,7 @@ main {
 	line-height: 1.2;
 	position: relative;
 	margin: 10px 10px;
-	
+
 	text-transform: capitalize;
 }
 
@@ -572,12 +574,13 @@ p {
 	font-family: 'Lato', sans-serif;
 
 }
+
 footer>.home_sci {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	
+
 }
 
 footer>.home_sci a:nth-child(1) {
@@ -597,28 +600,160 @@ footer>.home_sci a:nth-child(3) {
 	animation: slideLeft 2s ease forwards;
 	animation-delay: 3.5s;
 }
+
 footer>.home_sci a {
 	margin: 20px;
 
 }
+
 .lemon {
 	position: static;
 	border: 1px solid #3cf;
 }
 
 /* skill  */
-.skill{
+.skill {
+	width: 100%;
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 	margin: 20px;
+	justify-content: center;
+	align-items: center;
 }
-.skill h2{
+
+.skill>h2 {
+	font-size: 100px;
+	letter-spacing: 2px;
 	font-weight: 900;
 	left: 0;
+	position: relative;
+	-webkit-text-stroke: 1px #3b3a3a;
+	color: #252839;
 }
-.skill a{
-	display: inline-block;
+
+.skill>h2::before {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	color: #01fe82;
+	-webkit-text-stroke: 0px #383d52;
+	border-radius: 2px solid #01fe82;
+	overflow: hidden;
+	animation: animate 8s linear infinite;
+
 }
+
+@keyframes animate {
+
+	0%,
+	10%,
+	100% {
+		width: 0%;
+	}
+
+	70%,
+	90% {
+		width: 100%;
+	}
+}
+.skill .top,.bottom{
+	display: flex;
+	width: 80%;
+	margin: 20px;
+}
+.skill .web,.program, .soft, .office {
+	width: 50%;
+	font-weight: 500;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.skill a {
+	display: flex;
+	position: relative;
+	margin: 10px;
+
+}
+
+.skill a::after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: calc(100% + 5px);
+	background: red;
+	animation: progress 3s linear infinite;
+	animation-delay:2s ;
+	border-radius:1000px ;
+	border: .1px solid gray;
+	filter: blur(2px);
+	box-shadow: inset 2px 2px 4px;
+
+}
+
+@keyframes progress {
+
+	0% {
+		width: 3%;
+		background-color: #ff0000;
+	}
+
+	10% {
+		width: 5%;
+		background-color: #ff8000;
+	}
+
+	20% {
+
+		width: 10%;
+		background-color: #ffff00;
+	}
+
+	30% {
+		width: 15%;
+		background-color: #80ff00;
+	}
+
+	40% {
+		width: 20%;
+		background-color: #00ff00;
+	}
+
+	50% {
+		width: 25%;
+		background-color: #00ff80;
+	}
+
+	60% {
+		width: 30%;
+		background-color: #00ffff;
+	}
+
+	70% {
+		width: 35%;
+		background-color: #0080ff;
+	}
+
+	80% {
+		width: 40%;
+		background-color: #0000ff;
+	}
+
+	90% {
+		width: 60%;
+		background-color: #8000ff;
+	}
+
+	100% {
+		width: 90%;
+		background-color: #ff0080;
+	}
+
+}
+
 @keyframes slideBottom {
 	0% {
 		opacity: 0;
@@ -856,7 +991,7 @@ footer>.home_sci a {
 	}
 
 	/* end home  */
-	
+
 	/* about start  */
 
 	.main {
@@ -868,53 +1003,53 @@ footer>.home_sci a {
 	.top {
 		text-align: center;
 
-		
+
 	}
+
 	.top h1 {
 		font-size: 40px;
 	}
+
 	.top p {
 		font-size: 15px;
 	}
-	
+
 	.top p::before {
 		left: 0%;
 	}
-	
+
 	.top p::after {
 		right: 0%;
 
 	}
-	
-.img {
-	width: 70%;
-	height: 400px;
-	border: 1px solid rgba(255, 255, 255, .9);
-	position: relative;
-}
-	
+
+	.img {
+		width: 70%;
+		height: 400px;
+		border: 1px solid rgba(255, 255, 255, .9);
+		position: relative;
+	}
+
 	.personalInfo {
 		flex-direction: column;
 	}
-	
-.education {
 
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	.education {
 
-	
-}
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
-.exp,
-.edu {
 
-width: 80%;
-}
+	}
 
-.edu .bass {
-	
-}
+	.exp,
+	.edu {
+
+		width: 80%;
+	}
+
+	.edu .bass {}
 
 
 
