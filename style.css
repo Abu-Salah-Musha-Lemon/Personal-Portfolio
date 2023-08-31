@@ -614,7 +614,7 @@ footer>.home_sci a {
 
 /* skill  */
 .skill {
-	width: 100vh;
+	
 	display: flex;
 	flex-direction: column;
 	margin: 20px;
