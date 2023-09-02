@@ -1,0 +1,51 @@
+.port {
+	margin: 0 auto;
+}
+
+.portfolio {
+	text-align: center;
+	margin: 1rem;
+}
+
+.card_box {
+
+	/* display: grid;
+	grid-template-columns: 1fr 1fr 1fr ; */
+	gap: 10px;
+	border: 1px solid green;
+	overflow: hidden;
+
+}
+
+.card {
+	margin: 1.4rem;
+	border: 1px solid red;
+
+	/* overflow: hidden; */
+}
+.img_p{
+
+	width: 408px;
+	height: 280px;
+}
+.p_img {
+
+	width: 100%;
+	/* height: 100%; */
+	/* object-fit: cover; */
+}
+.card_desc{
+	text-align: center;
+
+}
+@media(width:960px){
+	
+.card_box {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+
+}
+}

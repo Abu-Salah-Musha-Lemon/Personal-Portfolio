@@ -264,7 +264,7 @@ body {
   background-position: 100% 0;
 }
 
-.home_sci a {
+.home_sci>a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -280,25 +280,25 @@ body {
   animation: circleRotate 5s linear infinite;
 }
 
-.home_sci a:nth-child(1) {
+.home_sci>a:nth-child(1) {
   opacity: 0;
   animation: slideTop 2s ease forwards;
   animation-delay: 3.1s;
 }
 
-.home_sci a:nth-child(2) {
+.home_sci>a:nth-child(2) {
   opacity: 0;
   animation: slideRigth 2s ease forwards;
   animation-delay: 3.25s;
 }
 
-.home_sci a:nth-child(3) {
+.home_sci>a:nth-child(3) {
   opacity: 0;
   animation: slideBottom 2s ease forwards;
   animation-delay: 3.5s;
 }
 
-.home_sci a::after {
+.home_sci>a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -310,11 +310,11 @@ body {
   transition: 0.5s ease;
 }
 
-.home_sci a:hover::after {
+.home_sci>a:hover::after {
   transform: scale(0);
 }
 
-.home_sci a::before {
+.home_sci>a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -326,7 +326,7 @@ body {
   transition: 0.5s ease;
 }
 
-.home_sci a:hover::before {
+.home_sci>a:hover::before {
   filter: blur(5px);
   transform: scale(0);
 }
@@ -404,7 +404,7 @@ body {
 
 /* home end */
 
-/* about section  */
+ /* about section  */
 main {
   display: flex;
   flex-direction: column;
@@ -565,115 +565,34 @@ footer > .home_sci {
   align-items: center;
 }
 
-footer > .home_sci a:nth-child(1) {
+footer > .home_sci>a:nth-child(1) {
   opacity: 0;
   animation: slideRigth 2s ease forwards;
   animation-delay: 3.1s;
 }
 
-footer > .home_sci a:nth-child(2) {
+footer > .home_sci>a:nth-child(2) {
   opacity: 0;
   animation: slideBottom 2s ease forwards;
   animation-delay: 3.25s;
 }
 
-footer > .home_sci a:nth-child(3) {
+footer > .home_sci>a:nth-child(3) {
   opacity: 0;
   animation: slideLeft 2s ease forwards;
   animation-delay: 3.5s;
 }
 
-footer > .home_sci a {
+footer > .home_sci>a {
   margin: 20px;
 }
 
 .lemon {
   position: static;
   border: 1px solid #3cf;
-}
+} 
 
 
-/* :is(.web, .program, .buttom, .soft, .office) h2{
-	top: 0;
-	left: 0;
-	font-size: 40px;
-	position: relative;
-	font-weight: 300;
-	-webkit-text-stroke: none;
-}
-:is(.web, .program, .buttom,.soft, .office) h2::after{
-	content: attr(data-text);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 100%;
-	color: #01fe82;
-	-webkit-text-stroke: 0px #383d52;
-	border-radius: 2px solid #01fe82;
-	overflow: hidden;
-	animation: animate 8s linear infinite;
-} */
-
-/* @keyframes progress {
-
-	0% {
-		width: 3%;
-		background-color: #ff0000;
-	}
-
-	10% {
-		width: 5%;
-		background-color: #ff8000;
-	}
-
-	20% {
-
-		width: 10%;
-		background-color: #ffff00;
-	}
-
-	30% {
-		width: 15%;
-		background-color: #80ff00;
-	}
-
-	40% {
-		width: 20%;
-		background-color: #00ff00;
-	}
-
-	50% {
-		width: 25%;
-		background-color: #00ff80;
-	}
-
-	60% {
-		width: 30%;
-		background-color: #00ffff;
-	}
-
-	70% {
-		width: 35%;
-		background-color: #0080ff;
-	}
-
-	80% {
-		width: 45%;
-		background-color: #0000ff;
-	}
-
-	90% {
-		width: 75%;
-		background-color: #8000ff;
-	}
-
-	100% {
-		width: 90%;
-		background-color: #ff0080;
-	}
-
-} */
 
 @keyframes slideBottom {
   0% {
@@ -759,49 +678,52 @@ footer > .home_sci a {
   }
 }
 
-@media (max-width: 960px) {
-  .header {
-    padding: 1.4rem 5%;
-  }
-}
+
 
 @media (max-width: 960px) {
   .icons {
     display: inline-block;
   }
 
-  #check:checked ~ .icons #menu_icon {
+  #check:checked~.icons #menu_icon {
     display: none;
   }
 
-  #check:checked ~ .icons #close_icon {
+  #check:checked~.icons #close_icon {
     display: block;
   }
 
   .icons #close_icon {
     display: none;
   }
+  .header{
+    display: block;
+    /* position: relative; */
+  }
 
   .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 0;
+    display: none;
     font-size: 20px;
     color: white;
     font-weight: 500;
     backdrop-filter: blur(5px);
-    background: rgba(255, 255, 255, 0.1);
-    transition: 0.4s ease;
+    /* background: rgba(255, 255, 255, 0.1); */
+    transition: transform 400s ease-in-out;
+    transform-origin: top;
     overflow: hidden;
+    transform: scale(0,1);
+
   }
 
-  #check:checked ~ .navbar {
-    height: 18rem;
+  #check:checked~.navbar {
+    /* height: 18rem; */
+    display: block;
+    transition: transform 150s ease;
+    transform: scale(1,1);
+    /* background: red; */
   }
 
-  .navbar a {
+  .navbar>a {
     display: block;
     font-size: 1.1rem;
     margin: 1.5rem 0;
@@ -811,7 +733,7 @@ footer > .home_sci a {
   /* home section  */
 
   .home {
-    width: 100%;
+
     height: 100vh;
     display: flex;
     align-items: center;

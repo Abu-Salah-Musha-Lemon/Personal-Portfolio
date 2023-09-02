@@ -5,83 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="portfolio.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="header">
-      <a href="./index.htm" class="logo">Portfolio</a>
-
-      <input type="checkbox" name="" id="check" />
-      <label for="check" class="icons">
-        <i class="bx bx-menu" id="menu_icon"></i>
-        <i class="bx bx-x" id="close_icon"></i>
-      </label>
-      <nav class="navbar">
-        <a href="./index.htm" style="--i: 1" class="active">Home</a>
-        <a href="./about.htm" style="--i: 2">About</a>
-        <a href="./skill.htm" style="--i: 3">Skill</a>
-        <a href="./portfolio.htm" style="--i: 4">Portfolio</a>
-        <a href="./recomendation" style="--i: 5">Recomendation</a>
-        <a href="./contact" style="--i: 6">Contact</a>
-      </nav>
-    </header>
+    <div class="container">
+      <div class="header">
+        <a href="./index.htm" class="logo">Portfolio</a>
+  
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="icons">
+          <i class='bx bx-menu' id="menu_icon"></i>
+          <i class='bx bx-x' id="close_icon"></i>
+        </label>
+        <nav class="navbar">
+          <a href="./index.htm" style="--i: 1" class="active">Home</a>
+          <a href="./about.htm" style="--i: 2">About</a>
+          <a href="./skill.htm" style="--i: 3">Skill</a>
+          <a href="./portfolio.htm" style="--i: 4">Portfolio</a>
+          <a href="./recomendation" style="--i: 5">Recomendation</a>
+          <a href="./contact" style="--i: 6">Contact</a>
+        </nav>
+      </div>
+    </div>
     <main class="port">
       <div class="portfolio">
         <h2>My Portfolio</h2>
         <p>A few recent design & coding project want to see more? email me.</p>
       </div>
+
       <div class="card_box">
         <div class="card">
-          <img
+          <div class="img_p">
+            <img
             src="https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             class="p_img"
             alt=""
             srcset=""
           />
-          <h3>Details</h3>
-          <a href="#">visit for more deatils</a>
+          </div>
+          <div class="card_desc">
+            <h3 class="card_title">Details</h3>
+            <a href="#" class="card_button">visit for more deatils</a>
+          </div>
         </div>
         <div class="card">
-          <img
+          <div class="img_p">
+            <img
             src="https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             class="p_img"
             alt=""
             srcset=""
           />
-          <h3>Details</h3>
-          <a href="#">visit for more deatils</a>
+          </div>
+          <div class="card_desc">
+            <h3 class="card_title">Details</h3>
+            <a href="#" class="card_button">visit for more deatils</a>
+          </div>
         </div>
         <div class="card">
-          <img
+          <div class="img_p">
+            <img
             src="https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             class="p_img"
             alt=""
             srcset=""
           />
-          <h3>Details</h3>
-          <a href="#">visit for more deatils</a>
+          </div>
+          <div class="card_desc">
+            <h3 class="card_title">Details</h3>
+            <a href="#" class="card_button">visit for more deatils</a>
+          </div>
         </div>
-        <div class="card">
-          <img
-            src="https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            class="p_img"
-            alt=""
-            srcset=""
-          />
-          <h3>Details</h3>
-          <a href="#">visit for more deatils</a>
-        </div>
-        <div class="card">
-          <img
-            src="https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            class="p_img"
-            alt=""
-            srcset=""
-          />
-          <h3>Details</h3>
-          <a href="#">visit for more deatils</a>
-        </div>
+
+
       </div>
+      
     </main>
   </body>
 </html>
