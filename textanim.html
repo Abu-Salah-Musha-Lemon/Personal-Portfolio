@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text animantion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600&family=Courgette&family=Courier+Prime:ital,wght@0,700;1,400;1,700&family=Dancing+Script:wght@400;500;600;700&family=Italianno&family=Lato&family=Noto+Sans+TC:wght@400;500;700;900&family=Pacifico&family=Tulpen+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    #text {
+      font-size: 7.6vw;
+      /* font-family: "Assistant", sans-serif;
+      font-family: "Courgette", cursive; */
+      font-family: "Courier Prime", monospace;
+      /* font-family: "Dancing Script", cursive;
+      font-family: "Italianno", cursive;
+      font-family: "Lato", sans-serif;
+      font-family: "Noto Sans TC", sans-serif;
+      font-family: "Pacifico", cursive;
+      font-family: "Tulpen One", cursive; */
+    }
+  </style>
+  <body>
+    <div id="text"></div>
+
+    <script>
+      var string = "ASM Lemon!"; /* type your text here */
+      var array = string.split("");
+      var timer;
+
+      function frameLooper() {
+        if (array.length > 0) {
+          document.getElementById("text").innerHTML += array.shift();
+        } else {
+          clearTimeout(timer);
+        }
+        loopTimer = setTimeout("frameLooper()", 70); /* change 70 for speed */
+      }
+      frameLooper();
+    </script>
+  </body>
+</html>
