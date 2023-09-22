@@ -14,25 +14,7 @@
     <title>Abu Salah Musha Lemon</title>
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <a href="./index.htm" class="logo">Portfolio</a>
-  
-        <input type="checkbox" name="" id="check">
-        <label for="check" class="icons">
-          <i class='bx bx-menu' id="menu_icon"></i>
-          <i class='bx bx-x' id="close_icon"></i>
-        </label>
-        <nav class="navbar">
-          <a href="./index.htm" style="--i: 1" class="active">Home</a>
-          <a href="./about.htm" style="--i: 2">About</a>
-          <a href="./skill.htm" style="--i: 3">Skill</a>
-          <a href="./portfolio.htm" style="--i: 4">Portfolio</a>
-          <a href="./recomendation.html" style="--i: 5">Refer..</a>
-          <a href="./contact.html" style="--i: 6">Contact</a>
-        </nav>
-      </div>
-    </div>
+    <div class="nav"></div>
 <main>
   <section class="home">
     <div class="home_sci">
@@ -48,17 +30,15 @@
       </p>
       <a href="#" class="btn"> Hire Me</a>
     </div>
-    <!-- <div class="home_img">
-      <div class="gclowing_cercle">
-        <span></span>
-        <span></span>
-        <div class="image">
-
-        </div>
-      </div>
-    </div> -->
   </section>
 </main>
+<script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(content => {
+        document.querySelector('.nav').innerHTML = content;
+      });
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples-min.min.js"></script>
 <script>

@@ -1,151 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./portfolio.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <a href="./index.htm" class="logo">Portfolio</a>
 
-        <input type="checkbox" name="" id="check" />
-        <label for="check" class="icons">
-          <i class="bx bx-menu" id="menu_icon"></i>
-          <i class="bx bx-x" id="close_icon"></i>
-        </label>
-        <nav class="navbar">
-          <a href="./index.htm" style="--i: 1" class="active">Home</a>
-          <a href="./about.htm" style="--i: 2">About</a>
-          <a href="./skill.htm" style="--i: 3">Skill</a>
-          <a href="./portfolio.htm" style="--i: 4">Portfolio</a>
-          <a href="./recomendation.html" style="--i: 5">Refer..</a>
-          <a href="./contact.html" style="--i: 6">Contact</a>
-        </nav>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./portfolio.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <div class="nav"></div>
+
+  <main class="port">
+    <div class="portfolio">
+      <h2>My Portfolio</h2>
+      <p>A few recent design & coding project want to see more? email me.</p>
     </div>
 
-    <main class="port">
-      <div class="portfolio">
-        <h2>My Portfolio</h2>
-        <p>A few recent design & coding project want to see more? email me.</p>
-      </div>
+    <div class="card_box">
+    </div>
+  </main>
+  <br>
 
-      <div class="card_box">
-
-        <div class="card">
-          <div class="img_p">
-            <img
-              src="https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="p_img"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div class="card_desc">
-            <h3 class="card_title">Hospital Management System</h3>
-            <a
-              href="https://abu-salah-musha-lemon.github.io/Hospital-Management-System/"
-              class="card_button"
-              >visit for more deatils</a
-            >
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="img_p">
-            <img
-              src="https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="p_img"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div class="card_desc">
-            <h3 class="card_title">E-commerce website html,css,js</h3>
-            <a
-              href="https://abu-salah-musha-lemon.github.io/E-commerce-website-html-css-js/"
-              class="card_button"
-              >visit for more deatils</a
-            >
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="img_p">
-            <img
-              src="https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="p_img"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div class="card_desc">
-            <h3 class="card_title">One Page Design</h3>
-            <a
-              href="https://abu-salah-musha-lemon.github.io/OnePageDesign/"
-              class="card_button"
-              >visit for more deatils</a
-            >
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="img_p">
-            <img
-              src="https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="p_img"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div class="card_desc">
-            <h3 class="card_title">DARKDELIGHT</h3>
-            <a
-              href="https://abu-salah-musha-lemon.github.io/onePageWebSit/"
-              class="card_button"
-              >visit for more deatils</a
-            >
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="img_p">
-            <img
-              src="https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="p_img"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div class="card_desc">
-            <h3 class="card_title">Web Design Use Bootstrap</h3>
-            <a
-              href="https://abu-salah-musha-lemon.github.io/WebDesignUsedBootstrap/"
-              class="card_button"
-              >visit for more deatils</a
-            >
-          </div>
-        </div>
-      </div>
-    </main>
-    <br>
-
-  </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples-min.min.js"></script>
-  <script>
-    $("body").ripples({
-      dropRadius: 20,
-      perturbance: 0.03,
+</body>
+<script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(content => {
+      document.querySelector('.nav').innerHTML = content;
     });
-  </script>
+
+  let http = new XMLHttpRequest();
+
+  http.open("get", "portfolio.json", true);
+
+  http.send();
+
+  http.onload = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      let products = JSON.parse(this.responseText);
+
+      let output = "";
+      for (const i of products) {
+        output += `
+        <div class="card">
+        <div class="img_p">
+          <img
+            src="${i.imgLink}"
+            class="p_img" alt="" srcset="" />
+        </div>
+        <div class="card_desc">
+          <h3 class="card_title">${i.ProjectName}</h3>
+          <a href="${i.webLink}" class="card_button">visit for
+            more deatils</a>
+        </div>
+      </div>
+             `;
+      }
+      document.querySelector(".card_box").innerHTML = output;
+    }
+  };
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples-min.min.js"></script>
+<script>
+  $("body").ripples({
+    dropRadius: 20,
+    perturbance: 0.03,
+  });
+</script>
+
 </html>
