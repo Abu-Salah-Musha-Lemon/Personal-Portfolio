@@ -1,75 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio" />
-    <meta name="author" content="Abu Salah Musha lemon" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="skill.css" />
-    <title>Abu Salah Musha Lemon</title>
-  </head>
-  <body>
-    <div class="nav"></div>
-<div class="container">
-  <div class="skill">
-    <h2 class="skil" data-text="Skills">Skills</h2>
-    <div class="top">
-      <div class="web">
-        <h2 data-text="Web deverloper">Web deverloper</h2>
-        <a href="#">html <span class="tooltip">80%</span></a>
-        <a href="#">CSS<span class="tooltip">80%</span></a>
-        <a href="#">Java Script<span class="tooltip">80%</span></a>
-        <a href="#">PHP<span class="tooltip">50%</span></a>
-        React<div class="w3-light-grey"> 
-          <div class="w3-container w3-green w3-center" style="width:25%; height: 3px;"></div>
-        </div><br>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio" />
+  <meta name="author" content="Abu Salah Musha lemon" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="skill.css" />
+  <link rel="website icon" type="image/png" href="./lemon.png">
+  <title>Skills</title>
+</head>
+
+<body>
+  <div class="nav"></div>
+  <div class="container">
+    <div class="skill">
+      <h2 class="skil" data-text="Skills">Skills</h2>
+      <div class="top">
+        <div class="web">
+          <h2 data-text="Web deverloper">Web developer</h2>
+          <a href="#">html <span class="tooltip">80%</span></a>
+          <a href="#">CSS<span class="tooltip">80%</span></a>
+          <a href="#">Java Script<span class="tooltip">80%</span></a>
+          <a href="#">PHP<span class="tooltip">50%</span></a>
+          React<div class="w3-light-grey">
+            <div class="w3-container w3-green w3-center" style="width:25%; height: 3px;"></div>
+          </div><br>
+        </div>
+        <div class="program">
+          <h2 data-text="Programming Language">Programming Language</h2>
+          <a href="#">C</a>
+          <a href="#">Java</a>
+          <a href="#">Python</a>
+        </div>
       </div>
-      <div class="program">
-        <h2 data-text="Porgramming Language">Porgramming Language</h2>
-        <a href="#">C</a>
-        <a href="#">Java</a>
-        <a href="#">Python</a>
-      </div>
-    </div>
-    <div class="bottom">
-      <div class="soft">
-        <h2 data-text="Design Software">Design Software</h2>
-        <a href="#">Photoshop</a>
-        <a href="#">Illustator</a>
-        <a href="#">Figma</a>
-        <a href="#">Blender</a>
-      </div>
-      <div class="office">
-        <h2 data-text="Office (MS)">Office (MS)</h2>
-        <a href="#">Microsoft Word</a>
-        <a href="#">Microsoft Excel</a>
-        <a href="#">Microsoft PowerPoin</a>
-        <a href="#">Google Sheet</a>
-        <a href="#">Google Docs</a>
+      <div class="bottom">
+        <div class="soft">
+          <h2 data-text="Design Software">Design Software</h2>
+          <a href="#">Photoshop</a>
+          <a href="#">Illustator</a>
+          <a href="#">Figma</a>
+          <a href="#">Blender</a>
+        </div>
+        <div class="office">
+          <h2 data-text="Office (MS)">Office (MS)</h2>
+          <a href="#">Microsoft Word</a>
+          <a href="#">Microsoft Excel</a>
+          <a href="#">Microsoft PowerPoin</a>
+          <a href="#">Google Sheet</a>
+          <a href="#">Google Docs</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="footer"></div>
-<script src="script.js"></script>
-    <script>
-      fetch('nav.html')
-        .then(response => response.text())
-        .then(content => {
-          document.querySelector('.nav').innerHTML = content;
-        });
-      fetch('footer.html')
-        .then(response => response.text())
-        .then(content => {
-          document.querySelector('.footer').innerHTML = content;
-        });
+  <div class="footer"></div>
+  <script src="script.js"></script>
+  <script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(content => {
+        document.querySelector('.nav').innerHTML = content;
+      });
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(content => {
+        document.querySelector('.footer').innerHTML = content;
+      });
   </script>
-  </body>
+</body>
+
 </html>
