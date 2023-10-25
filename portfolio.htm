@@ -26,6 +26,7 @@
   <br>
 
 </body>
+<script src="script.js"></script>
 <script>
   fetch('nav.html')
     .then(response => response.text())
@@ -54,7 +55,7 @@
         </div>
         <div class="card_desc">
           <h3 class="card_title">${i.ProjectName}</h3>
-        <h3 class="card_title">Technology: ${i.Tecnology}</h3>
+        <h3 class="card_title">Technology: ${i.Technology}</h3>
         <a href="${i.webLink}" class="card_button  ">Live
         <a href="${i.Code}" class="card_button">Code</a>
         </div>
