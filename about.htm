@@ -83,18 +83,19 @@
   </div>
  <div class="footer"></div>
  <script src="script.js"></script>
-  <script>
-    fetch('nav.html')
+ <script>
+   fetch('nav.html')
       .then(response => response.text())
       .then(content => {
         document.querySelector('.nav').innerHTML = content;
       });
-    fetch('footer.html')
+      fetch('footer.html')
       .then(response => response.text())
       .then(content => {
         document.querySelector('.footer').innerHTML = content;
       });
-</script>
+    </script>
+      <script src="aciveLInk.js"></script>
 </body>
 
 </html>
