@@ -1024,3 +1024,19 @@ i{
     width: 300px;
 	}
 	}
+
+
+  /*  scrollbar */
+  body::-webkit-scrollbar {
+    width: .5em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(169, 169, 169, 0.26);
+    outline: 1px solid rgba(178, 204, 231, 0.377);
+    border-radius: 10%;
+  }
