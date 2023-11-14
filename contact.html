@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Portfolio" />
-	<meta name="author" content="Abu Salah Musha lemon" />
-	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="style.css" />
-	<link rel="webstie icon" type="image/png" href="./lemon.png">
+<head class="head">
 	<title>📞Contact Me 📩</title>
 </head>
 <style>
@@ -18,52 +10,6 @@
 		padding: 0;
 		box-sizing: border-box;
 		text-decoration: none;
-	}
-	.contact {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-
-	}
-
-	.phone {
-		font-size: 24px;
-		width: 400px;
-		margin: 10px 10px;
-		float: left;
-		border-radius: 13px;
-		background: #c5cae01f;
-		padding: 40px 50px;
-		background-blend-mode: overlay;
-		box-shadow: 1px 2px 2px 1px rgba(12, 13, 18, 0.10);
-		box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-		border: 1px solid rgba(255, 255, 255, 0.1);
-	}
-	.phone a{
-	text-decoration: none;
-	text-transform: lowercase;
-}
-
-	.phone:hover {
-		transform: scale(1.03);
-		cursor: pointer;
-		transition-delay: .1s;
-		transition-duration: .8s;
-		box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-	}
-
-	.phone h4 {
-		font-weight: 900;
-		font-size: 25px;
-	}
-	i{
-		padding-right: 4px;
-	}
-	@media (max-width: 960px) {
-		.phone{
-			width: 96%;
-		}
 	}
 </style>
 
@@ -74,28 +20,16 @@
 		<div class="contact">
 			<div class="phone">
 				<h4>Phone Number </h4>
-				<a href="#"> <i class='bx bxs-phone-call'></i> +8801978977465</a>
+				<a href="tel:+8801978977465"> <i class='bx bxs-phone-call'></i> +8801978977465</a>
 			</div>
 			<div class="phone">
 				<h4>Email </h4>
-				<a href="lemonahmed512@gmail.com"><i class='bx bxs-envelope'></i>lemonahmed512@gmail.com</a>
+				<a href="mailto:lemonahmed512@gmail.com"><i class='bx bxs-envelope'></i>lemonahmed512@gmail.com</a>
 			</div>
 		</div>
 	</main>
 	<div class="footer"></div>
-	<script src="script.js"></script>
-	<script>
-		fetch('nav.html')
-			.then(response => response.text())
-			.then(content => {
-				document.querySelector('.nav').innerHTML = content;
-			});
-		fetch('footer.html')
-			.then(response => response.text())
-			.then(content => {
-				document.querySelector('.footer').innerHTML = content;
-			});
-</script>
+	<script src="./script/include.js"></script>
 </body>
 
 </html>

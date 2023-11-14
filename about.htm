@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio" />
-  <meta name="author" content="Abu Salah Musha lemon" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="webstie icon" type="image/png" href="./lemon.png">
+<head class="head">
   <title>About Me</title>
 </head>
 <div class="container">
@@ -35,7 +27,7 @@
         <label for="">
           <address>Address : 312 Hazi lal mia shorker Road Dhaka - 1204</address>
         </label>
-        <div class="btn download"><i class='bx bx-cloud-download'><a href="./lemon-cv.pdf" download="abu-salah-musha-lemon">Downlode My CV</a></i></div>
+        <div class="btn download"><i class='bx bx-cloud-download'><a href="./lemon-cv.pdf" download="abu-salah-musha-lemon" target="_blank" rel="noopener noreferrer">Downlode My CV</a></i></div>
       </div>
       <style>
         .info02 span{
@@ -43,12 +35,16 @@
         }
       </style>
       <div class="info02">
-        <label for="">Freelance: No</label>
+        <!-- <label for="">Freelance: No</label> -->
         <label for="">Language : Bangla , English</label>
-        <label for="">Phone : 01978977465</label>
-        <label for="">Email: <span>lemonahmed512@gmail.com</span> </label>
-        <label for="">Linkedin : <span>abu-salah-musha-lemon</span> </label>
-        <label for="">Github : <span>abu-salah-musha-lemon</span> </label>
+        <label for=""> </label>
+        <label for="">Phone : <a href="tel:+8801978977465" class="email_text">+8801978977465</a></label>
+        <label for="">Email : <a href="mailto:lemonahmed512@gmail.com" class="email_text" target="_blank" rel="noopener noreferrer">lemonahmed512@gmail.com</a></label>
+        <label for="">Linkedin : <a href="https://www.linkedin.com/in/abu-salah-musha-lemon/" class="email_text"  target="_blank" rel="noopener noreferrer">abu-salah-musha-lemon</a></label>
+        <label for="">Github : <a href="https://github.com/Abu-Salah-Musha-Lemon" class="email_text"              target="_blank" rel="noopener noreferrer">abu-salah-musha-lemon</a></label>
+        
+        <label for=""> <span></span> </label>
+        <label for=""><span></span> </label>
       </div>
     </div>
     <div class="education">
@@ -82,20 +78,7 @@
     </div>
   </div>
  <div class="footer"></div>
- <script src="script.js"></script>
- <script>
-   fetch('nav.html')
-      .then(response => response.text())
-      .then(content => {
-        document.querySelector('.nav').innerHTML = content;
-      });
-      fetch('footer.html')
-      .then(response => response.text())
-      .then(content => {
-        document.querySelector('.footer').innerHTML = content;
-      });
-    </script>
-      <script src="aciveLInk.js"></script>
+ <script src="./script/include.js"></script>
 </body>
 
 </html>

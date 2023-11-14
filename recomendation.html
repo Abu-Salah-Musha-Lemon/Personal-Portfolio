@@ -1,146 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio" />
-  <meta name="author" content="Abu Salah Musha lemon" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="website icon" type="image/png" href="./lemon.png">
+<head class="head">
   <title>Reference</title>
 </head>
 <style>
-  .reCom {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
-  .card {
-    display: flex;
-    margin-top: 10px;
-    width: 600px;
-    border-radius: 13px;
-    background: #c5cae01f;
-    padding: 40px 50px;
-    background-blend-mode: overlay;
-    box-shadow: 1px 2px 2px 1px rgba(12, 13, 18, 0.1);
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
-      rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .info {
-    width: 400px;
-  }
-
-  .card .rc_img {
-    float: right;
-    cursor: pointer;
-  }
-
-  .card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 4px solid rgba(255, 255, 255, 0.1);
-  }
-
-  h4 {
-    margin-top: 4px;
-  }
-
-  .reC_i {
-    font-size: 20px;
-    font-weight: 400;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-
-  @media (max-width: 960px) {
-    .card {
-      width: 90%;
-      position: relative;
-    }
-    .info{
-      margin-top: 150px;
-    }
-    .rc_img{
-      position: absolute;
-      top:25px;
-      left: 50px;
-      transform: translate(50%);
-    }
-    .card img {
-    width: 150px;
-    height: 150px;
-  }.info{
-    text-align: center;
-  }
-  }
 </style>
 
 <body>
   <div class="nav"></div>
   <div class="refer"></div>
   <div class="footer"></div>
-  <script src="script.js"></script>
-  <script>
-    fetch('nav.html')
-      .then(response => response.text())
-      .then(content => {
-        document.querySelector('.nav').innerHTML = content;
-      });
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(content => {
-        document.querySelector('.footer').innerHTML = content;
-      });
-
-
-    let http = new XMLHttpRequest();
-
-    http.open("get", "refer.json", true);
-
-    http.send();
-
-    http.onload = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        let products = JSON.parse(this.responseText);
-
-        let output = "";
-        for (const i of products) {
-          output += `
-      <div class="reCom">
-      <div class="card">
-        <div class="info">
-          <h2>Name: ${i.Name}</h2>
-          <h3>${i.head}</h3>
-          <h3>${i.dept}</h3>
-          <h3>${i.university}</h3>
-          <h4>
-            <i class="bi bi-geo-alt reC_i"></i> ${i.location}
-          </h4>
-          <h4><i class="bi bi-envelope reC_i"></i>${i.email} </h4>
-          <h4><i class="bi bi-telephone-fill reC_i"></i> ${i.phone}</h4>
-          <h5></h5>
-        </div>
-        <div class="rc_img">
-          <img src="${i.imgLink}" alt="" srcset="" />
-        </div>
-      </div>
-      </div>
-           `;
-        }
-        document.querySelector(".refer").innerHTML = output;
-      }
-    };
-  </script>
+  <script src="./script/include.js"></script>
 </body>
 
 </html>

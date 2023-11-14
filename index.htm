@@ -1,21 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio" />
-  <meta name="author" content="Abu Salah Musha lemon" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="website icon" type="image/png" href="./lemon.png">
+<head class="head">
   <title>Abu Salah Musha Lemon</title>
 </head>
 
 <body>
   <div class="nav"></div>
-  <main>
+  <div>
     <section class="home">
       <div class="home_sci">
         <a href="https://fb.com/lemonahmed.512"><i class="bx bxl-facebook"></i></a>
@@ -40,24 +32,17 @@
         <a href="mailto:lemonahmed512@gmail.com" class="btn"> Hire Me</a>
       </div>
     </section>
-  </main>
-  <script src="script.js"></script>
-  <script>
-    fetch('nav.html')
-    .then(response => response.text())
-    .then(content => {
-      document.querySelector('.nav').innerHTML = content;
-    });
-    </script>
+  </div>
+  <script src="./script/include.js"></script>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples-min.min.js"></script>
   <script>
-    $('body').ripples({
+    $('html').ripples({
       dropRadius: 20,
       perturbance: .03,
     });
     </script>
-    <script src="aciveLInk.js"></script>
 </body>
 
 </html>

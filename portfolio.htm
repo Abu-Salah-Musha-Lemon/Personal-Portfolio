@@ -1,80 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./portfolio.css" />
-  <link rel="website icon" type="image/png" href="./lemon.png">
+<head class="head">
   <title>Portfolio</title>
 </head>
 
 <body>
   <div class="nav"></div>
 
-  <main class="port">
+  <div class="port">
     <div class="portfolio">
       <h2>My Portfolio</h2>
       <p>A few recent design & coding project want to see more? email me.</p>
     </div>
-      
-    </div>
-    <div class="card_box"></div>
-  </main>
-  <br>
+  </div>
+  <div class="port_card_box"></div>
+  <div class="footer"></div>
+  <script src="./script/include.js"></script>
 
-</body>
-<script src="script.js"></script>
-<script>
-  fetch('nav.html')
-    .then(response => response.text())
-    .then(content => {
-      document.querySelector('.nav').innerHTML = content;
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples-min.min.js"></script>
+  <script>
+    $("html").ripples({
+      dropRadius: 20,
+      perturbance: 0.03,
     });
-
-  let http = new XMLHttpRequest();
-
-  http.open("get", "portfolio.json", true);
-
-  http.send();
-
-  http.onload = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      let products = JSON.parse(this.responseText);
-
-      let output = "";
-      for (const i of products) {
-        output += `
-        <div class="card">
-        <div class="img_p">
-          <img
-            src="${i.imgLink}"
-            class="p_img" alt="" srcset="" />
-        </div>
-        <div class="card_desc">
-          <h3 class="card_title">${i.ProjectName}</h3>
-        <h3 class="card_title">Technology: ${i.Technology}</h3>
-        <a href="${i.webLink}" class="card_button  ">Live
-        <a href="${i.Code}" class="card_button">Code</a>
-        </div>
-      </div>
-             `;
-      }
-      document.querySelector(".card_box").innerHTML = output;
-    }
-  };
-</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples-min.min.js"></script>
-<script>
-  $("body").ripples({
-    dropRadius: 20,
-    perturbance: 0.03,
-  });
-</script>
+  </script>
+</body>
 
 </html>
