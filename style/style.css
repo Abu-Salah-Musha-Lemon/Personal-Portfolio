@@ -22,7 +22,7 @@ body {
 }
 
 .container{
-	width: 100%;
+	/* width: 100%; */
 }/* 
 .hedBg{
 	width: 100%;
@@ -35,7 +35,7 @@ body {
   position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
+  /* width: 100%; */
   padding: 0 20px;
   background: rgba(255, 255, 255, 0.01);
   border-bottom: 1px solid rgba(255, 255, 255, 0.01);
