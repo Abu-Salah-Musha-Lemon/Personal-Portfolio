@@ -49,9 +49,10 @@
   ,
   {
     
-    "ProjectName": "",
+    "ProjectName": "Website temple's",
+    "Technology": "html, css, jquery",
     "imgLink": "https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "webLink": ""
+    "webLink": "https://abu-salah-musha-lemon.github.io/website-templates/"
   }
 
 ]
