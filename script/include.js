@@ -101,6 +101,14 @@ document.onkeydown = (e) => {
   )
     return false;
 };
+document.addEventListener('DOMContentLoaded', function () {
+  var content = document.querySelector('.main');
+
+  content.addEventListener('scroll', function () {
+      // When scrolling occurs, show the scrollbar
+      document.body.style.overflow = 'auto';
+  });
+});
 
 
 
