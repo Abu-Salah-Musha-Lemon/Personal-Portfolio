@@ -386,6 +386,7 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 50%;
 	z-index: 1;
 	overflow: hidden;
+  object-fit: cover;
 } 
 
 
@@ -408,14 +409,17 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   animation: circleRotate 5s linear infinite;
 }
-
+.image{
+  padding-top: 20px;
+}
 .image img {
-  position: absolute;
+  position: relative;
   top: -30px;
   left: 50%;
   transform: translate(-50%);
-  /* max-width: 350px; */
+  max-width: 350px;
   object-fit: cover;
+  border-radius: 2%;
 }
 
 /* home end */
@@ -475,7 +479,7 @@ main {
 
 .personalInfo {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   position: relative;
@@ -835,16 +839,19 @@ display: none;
 
   .home_img .gclowing_cercle span:nth-child(1) {
     filter: blur(10px);
-  }
+  }*/
+
+
 
   .image img {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%);
-     max-width: 350px; 
+    max-width: 90%; 
     object-fit: cover;
-  } */
+    border-radius: 2%;
+  } 
 
   /* end home  */
 
