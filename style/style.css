@@ -380,8 +380,8 @@ body::-webkit-scrollbar-thumb {
 }  
 .home_img .gclowing_cercle .image {
 	position: relative;
-	width: 380px;
-	height: 380px;
+	/* width: 380px;
+	height: 320px; */
 	background: rgba(255, 255, 255, 0.041);
 	border-radius: 50%;
 	z-index: 1;
