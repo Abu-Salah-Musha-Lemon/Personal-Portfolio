@@ -1,6 +1,5 @@
 [
   {
-    
     "ProjectName": "Hospital Management System",
     "Technology": "Html, CSS",
     "imgLink": "https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -8,7 +7,6 @@
     "Code": "https://abu-salah-musha-lemon.github.io/Hospital-Management-System/"
   },
   {
-    
     "ProjectName": "E-Commerce Website ",
     "Technology": "Html, CSS",
     "imgLink": "https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -16,43 +14,33 @@
     "Code": "https://abu-salah-musha-lemon.github.io/Hospital-Management-System/"
   },
   {
-    
     "ProjectName": "One Page Design",
     "Technology": "Html, CSS",
     "imgLink": "https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "webLink": "https://abu-salah-musha-lemon.github.io/OnePageDesign/"
-  }
-  ,
+  },
   {
-    
     "ProjectName": "DARKDELIGHT",
     "Technology": "Html, CSS",
     "imgLink": "https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "webLink": "https://abu-salah-musha-lemon.github.io/onePageWebSit/"
-  }
-  ,
+  },
   {
-    
     "ProjectName": "Web Design Use Bootstrap",
     "Technology": "Bootstrap",
     "imgLink": "https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "webLink": "https://abu-salah-musha-lemon.github.io/WebDesignUsedBootstrap/"
-  }
-  ,
+  },
   {
-    
     "ProjectName": "NU-CSE",
     "Technology": "Bootstrap, JavaScript ,JSON",
     "imgLink": "https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "webLink": "https://abu-salah-musha-lemon.github.io/ASML-NU-CSE/ "
-  }
-  ,
+  },
   {
-    
     "ProjectName": "Website templates",
     "Technology": "html, css, jquery",
     "imgLink": "https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "webLink": "https://abu-salah-musha-lemon.github.io/website-templates/"
   }
-
 ]

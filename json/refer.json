@@ -1,19 +1,15 @@
 [
   {
-    
     "Name": "Atikul Islam Liton",
-    "imgLink":" ",
+    "imgLink": " ",
     "head": "Head Of IT",
     "dept": "Dept.Of CSE",
     "university": "University: University Of South Asia",
     "location": "Amin bazar, Savar, Dhaka-1348",
     "email": "ail@southasiauni.ac.bd",
     "phone": "+8801817514545"
-
-  }
-  ,
+  },
   {
-    
     "Name": "Maruf Newaz",
     "head": "Head Of IT",
     "dept": "Dept.Of CSE",
@@ -21,7 +17,5 @@
     "location": " Dhanmondi Dhaka-1205",
     "email": "",
     "phone": "+8801716-239539"
-
   }
-  
 ]

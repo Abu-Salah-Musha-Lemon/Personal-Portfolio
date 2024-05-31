@@ -1,18 +1,18 @@
 fetch('./inc/nav.html')
-.then(response => response.text())
-.then(content => {
-  document.querySelector('.nav').innerHTML = content;
-});
+  .then(response => response.text())
+  .then(content => {
+    document.querySelector('.nav').innerHTML = content;
+  });
 fetch('./inc/head.html')
-.then(response => response.text())
-.then(content => {
-  document.querySelector('.head').innerHTML = content;
-});
+  .then(response => response.text())
+  .then(content => {
+    document.querySelector('.head').innerHTML = content;
+  });
 fetch('./inc/footer.html')
-.then(response => response.text())
-.then(content => {
-  document.querySelector('.footer').innerHTML = content;
-});
+  .then(response => response.text())
+  .then(content => {
+    document.querySelector('.footer').innerHTML = content;
+  });
 // portfolio
 let httpPortfolio = new XMLHttpRequest();
 httpPortfolio.open("get", "./json/portfolio.json", true);
@@ -84,33 +84,28 @@ httpRefer.onload = function () {
 
 
 // Disable right-click
-// document.addEventListener('contextmenu', (e) => e.preventDefault());
+document.addEventListener('contextmenu', (e) => e.preventDefault());
 
-// function ctrlShiftKey(e, keyCode) {
-//   return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-// }
+function ctrlShiftKey(e, keyCode) {
+  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
 
-// document.onkeydown = (e) => {
-//   // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
-//   if (
-//     event.keyCode === 123 ||
-//     ctrlShiftKey(e, 'I') ||
-//     ctrlShiftKey(e, 'J') ||
-//     ctrlShiftKey(e, 'C') ||
-//     (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-//   )
-//     return false;
-// };
+document.onkeydown = (e) => {
+  // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+  if (
+    event.keyCode === 123 ||
+    ctrlShiftKey(e, 'I') ||
+    ctrlShiftKey(e, 'J') ||
+    ctrlShiftKey(e, 'C') ||
+    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+  )
+    return false;
+};
 document.addEventListener('DOMContentLoaded', function () {
   var content = document.querySelector('.main');
 
   content.addEventListener('scroll', function () {
-      // When scrolling occurs, show the scrollbar
-      document.body.style.overflow = 'auto';
+    // When scrolling occurs, show the scrollbar
+    document.body.style.overflow = 'auto';
   });
 });
-
-
-
-
-

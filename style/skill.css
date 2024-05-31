@@ -1,6 +1,5 @@
 .container {
   margin: 0 auto;
-
 }
 
 .skill {
@@ -21,7 +20,7 @@
   color: #252839;
 }
 
-.skill>h2::before {
+.skill > h2::before {
   overflow: hidden;
   content: attr(data-text);
   position: absolute;
@@ -37,7 +36,6 @@
 }
 
 @keyframes animate {
-
   0%,
   10%,
   100% {
@@ -120,7 +118,6 @@
 }
 
 @media (max-width: 960px) {
-
   .top,
   .bottom {
     flex-direction: column;
@@ -145,8 +142,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-
-
   .skill .web,
   .program,
   .soft,
@@ -156,7 +151,6 @@
 }
 
 @media (max-width: 425px) {
-
   .skill .web,
   .program,
   .soft,
@@ -166,7 +160,6 @@
 }
 
 @media (max-width: 320px) {
-
   .skill .web,
   .program,
   .soft,

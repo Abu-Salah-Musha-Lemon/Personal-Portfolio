@@ -19,11 +19,12 @@ const navLinks = document.querySelectorAll('.navbar a').forEach(link => {
 //     $(this).addClass("active");
 // });
 // });
-{/* <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script> */}
+{
+  /* <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script> */ }
 
 
 let select = window.location.pathname.split('/')[1];
-let navbar = document.querySelectorAll('navbar').forEach(link=>{
-   let active = link.classList.add('active');
+let navbar = document.querySelectorAll('navbar').forEach(link => {
+  let active = link.classList.add('active');
   console.log(active);
 })
