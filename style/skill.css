@@ -147,7 +147,7 @@
 @media only screen and (min-width: 768px) {
 
 
-  .skill.web,
+  .skill .web,
   .program,
   .soft,
   .office {
@@ -157,7 +157,7 @@
 
 @media (max-width: 425px) {
 
-  .skill.web,
+  .skill .web,
   .program,
   .soft,
   .office {
@@ -167,7 +167,7 @@
 
 @media (max-width: 320px) {
 
-  .skill.web,
+  .skill .web,
   .program,
   .soft,
   .office {

@@ -194,6 +194,8 @@ body::-webkit-scrollbar-thumb {
 .home_content {
   max-width: 40%;
   margin-top: 40px;
+  text-align: justify;
+  text-justify: inter-word;
   /* margin-left: 40px; */
 }
 
@@ -764,7 +766,16 @@ footer > .home_sci>a {
     left: 0;
     padding: 70px 10% 0;
   }
+  .home_content{
+    max-width: 95%;
+    text-align: center;
+    letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 1.2;
+  text-align: justify;
+text-justify: inter-word;
 
+  }
   .home_content h1 {
     position: relative;
     font-size: 40px;
@@ -1018,8 +1029,7 @@ text-transform: lowercase;
 }
 
 .phone:hover {
-  transform: scale(1.03);
-  cursor: pointer;
+  /* transform: scale(1.03); */
   transition-delay: .1s;
   transition-duration: .8s;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
@@ -1028,6 +1038,10 @@ text-transform: lowercase;
 .phone h4 {
   font-weight: 900;
   font-size: 25px;
+}
+.phone a{
+  cursor: pointer;
+
 }
 i{
   padding-right: 4px;
