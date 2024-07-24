@@ -34,7 +34,7 @@ httpPortfolio.onload = function () {
                 <h3 class="port_card_title">${i.ProjectName}</h3>
                 <h3 class="port_card_title">Technology: ${i.Technology}</h3>
                 <a href="${i.webLink}"  class="port_card_button" target="_blank" rel="noopener noreferrer">Live</a>
-                <a href="${i.Code}"     class="port_card_button" target="_blank" rel="noopener noreferrer">Code</a>
+                <!-- <a href="${i.Code}"     class="port_card_button" target="_blank" rel="noopener noreferrer">Code</a>-->
             </div>
       </div>
            `;
