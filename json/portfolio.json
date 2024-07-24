@@ -42,5 +42,11 @@
     "Technology": "html, css, jquery",
     "imgLink": "https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "webLink": "https://abu-salah-musha-lemon.github.io/website-templates/"
+  },
+  {
+    "ProjectName": "Food App POS",
+    "Technology": "html, css",
+    "imgLink": "https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "webLink": "https://abu-salah-musha-lemon.github.io/website-templates/pos2/index.html"
   }
 ]
