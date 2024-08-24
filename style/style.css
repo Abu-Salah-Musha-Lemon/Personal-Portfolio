@@ -8,6 +8,9 @@
 	font-family: 'Noto Sans TC', sans-serif;
 	font-family: 'Pacifico', cursive;
 	font-family: 'Tulpen One', cursive; */
+  html{
+    scroll-behavior: smooth;
+  }
 * {
   margin: 0;
   padding: 0;
