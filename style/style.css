@@ -558,15 +558,19 @@ main {
 .education {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 40px;
+  gap: 10px;
 }
 
 .exp,
 .edu {
-  width: 50%;
+  width: 48%;
   height: 100%;
   margin-bottom: 30px;
+}
+.exp{
+  margin-top: 0;
 }
 
 .edu .bass {
