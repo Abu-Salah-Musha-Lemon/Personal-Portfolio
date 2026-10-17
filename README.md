@@ -1,4 +1,5 @@
 # ASM Lemon — Professional Dynamic Portfolio
+### Site is live at [Abu-Salah-Musha-Lemon](https://abu-salah-musha-lemon.github.io/Personal-Portfolio/)
 
 This version is a **JSON-driven static portfolio** designed for GitHub Pages, Netlify, Vercel static hosting, or any normal web server.
 
