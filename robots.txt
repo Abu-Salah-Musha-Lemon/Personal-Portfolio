@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abu-salah-musha-lemon.github.io/Personal-Portfolio/sitemap.xml

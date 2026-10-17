@@ -1,0 +1,110 @@
+{
+  "instructions": "Copy one preset's values into content.json > design. You can mix individual values across presets.",
+  "presets": {
+    "midnightViolet": {
+      "palette": {
+        "dark": {
+          "background": "#07111f",
+          "backgroundElevated": "#0b1728",
+          "surface": "rgba(16,31,52,.78)",
+          "surfaceSolid": "#0f1e33",
+          "surfaceSecondary": "#132640",
+          "text": "#f4f7fb",
+          "muted": "#98a8bd",
+          "mutedSecondary": "#6f8199",
+          "line": "rgba(165,186,214,.14)",
+          "lineStrong": "rgba(165,186,214,.24)",
+          "primary": "#7c5cff",
+          "secondary": "#4fd1ff",
+          "tertiary": "#a7f3d0",
+          "success": "#48d7a8"
+        }
+      },
+      "components": {
+        "surfaceStyle": "glass",
+        "buttonStyle": "gradient",
+        "shapeStyle": "rounded",
+        "motion": "full"
+      }
+    },
+    "graphiteEmerald": {
+      "palette": {
+        "dark": {
+          "background": "#07100d",
+          "backgroundElevated": "#0b1713",
+          "surface": "rgba(13,33,27,.82)",
+          "surfaceSolid": "#0d211b",
+          "surfaceSecondary": "#143127",
+          "text": "#f2fbf7",
+          "muted": "#9bb7aa",
+          "mutedSecondary": "#708c7f",
+          "line": "rgba(180,220,200,.13)",
+          "lineStrong": "rgba(180,220,200,.23)",
+          "primary": "#34d399",
+          "secondary": "#22d3ee",
+          "tertiary": "#bef264",
+          "success": "#4ade80"
+        }
+      },
+      "components": {
+        "surfaceStyle": "solid",
+        "buttonStyle": "solid",
+        "shapeStyle": "soft",
+        "motion": "full"
+      }
+    },
+    "editorialLight": {
+      "defaultTheme": "light",
+      "palette": {
+        "light": {
+          "background": "#faf9f6",
+          "backgroundElevated": "#ffffff",
+          "surface": "rgba(255,255,255,.92)",
+          "surfaceSolid": "#ffffff",
+          "surfaceSecondary": "#f2efe9",
+          "text": "#171717",
+          "muted": "#626262",
+          "mutedSecondary": "#8b8b8b",
+          "line": "rgba(23,23,23,.10)",
+          "lineStrong": "rgba(23,23,23,.20)",
+          "primary": "#d946ef",
+          "secondary": "#2563eb",
+          "tertiary": "#059669",
+          "success": "#16a34a"
+        }
+      },
+      "components": {
+        "surfaceStyle": "flat",
+        "buttonStyle": "outline",
+        "shapeStyle": "square",
+        "motion": "reduced"
+      }
+    },
+    "navyOrange": {
+      "palette": {
+        "dark": {
+          "background": "#07101f",
+          "backgroundElevated": "#0a1628",
+          "surface": "rgba(15,31,52,.82)",
+          "surfaceSolid": "#0e1c31",
+          "surfaceSecondary": "#152943",
+          "text": "#f7f8fb",
+          "muted": "#a6b0c1",
+          "mutedSecondary": "#758196",
+          "line": "rgba(185,198,219,.14)",
+          "lineStrong": "rgba(185,198,219,.24)",
+          "primary": "#f97316",
+          "secondary": "#38bdf8",
+          "tertiary": "#facc15",
+          "success": "#22c55e"
+        }
+      },
+      "components": {
+        "surfaceStyle": "glass",
+        "buttonStyle": "gradient",
+        "shapeStyle": "rounded",
+        "motion": "full"
+      }
+    }
+  }
+}

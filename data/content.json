@@ -1,0 +1,759 @@
+{
+  "profile": {
+    "name": "Abu Salah Musha Lemon",
+    "shortName": "ASM Lemon",
+    "headline": "Full-Stack Developer building practical business systems and digital experiences.",
+    "location": "Dhaka, Bangladesh",
+    "email": "lemonahmed512@gmail.com",
+    "availability": "Open to software, web and creative-technology opportunities",
+    "summary": "I design and build web applications that combine reliable backend engineering with clear, user-focused interfaces. My work spans Laravel/PHP systems, responsive web experiences, brand design and AI-assisted creative workflows.",
+    "github": "https://github.com/Abu-Salah-Musha-Lemon",
+    "linkedin": "https://www.linkedin.com/in/abu-salah-musha-lemon/",
+    "behance": "https://www.behance.net/abu-salah-musha",
+    "youtube": "https://www.youtube.com/channel/UCuJrVADp9B0T9AIadz2eAVw",
+    "githubApi": "https://api.github.com/users/Abu-Salah-Musha-Lemon",
+    "brandMark": "AL",
+    "roles": [
+      "Full-Stack Developer",
+      "Web & Product Designer",
+      "Creative Technologist"
+    ],
+    "eyebrow": "Full-Stack Developer · Web & Product Designer · Creative Technologist",
+    "lead": "I build digital products that help people work more clearly—from Laravel business systems and e-commerce workflows to responsive interfaces and visual communication.",
+    "timezone": "UTC +06:00",
+    "avatar": "https://avatars.githubusercontent.com/u/114002239?s=512&v=4",
+    "avatarFallback": "assets/img/asm-logo.png",
+    "aboutTitle": "Engineering practical systems with a strong visual perspective.",
+    "aboutLead": "I’m Abu Salah Musha Lemon, a developer and designer based in Dhaka, focused on useful software, clear interfaces and dependable digital workflows.",
+    "aboutBody": "My experience includes Laravel/PHP applications, inventory and POS systems, e-commerce, WordPress, branding and AI-assisted creative production. I enjoy translating operational needs into structured, maintainable products that are straightforward to use.",
+    "now": "Currently pursuing an MSc in Computer Science & Engineering at Jagannath University while developing full-stack projects and exploring applied AI and creative technology."
+  },
+  "design": {
+    "defaultTheme": "dark",
+    "allowThemeToggle": true,
+    "palette": {
+      "dark": {
+        "background": "#07111f",
+        "backgroundElevated": "#0b1728",
+        "surface": "rgba(16, 31, 52, 0.78)",
+        "surfaceSolid": "#0f1e33",
+        "surfaceSecondary": "#132640",
+        "text": "#f4f7fb",
+        "muted": "#98a8bd",
+        "mutedSecondary": "#6f8199",
+        "line": "rgba(165, 186, 214, 0.14)",
+        "lineStrong": "rgba(165, 186, 214, 0.24)",
+        "primary": "#7c5cff",
+        "secondary": "#4fd1ff",
+        "tertiary": "#a7f3d0",
+        "success": "#48d7a8"
+      },
+      "light": {
+        "background": "#f6f8fc",
+        "backgroundElevated": "#ffffff",
+        "surface": "rgba(255,255,255,.82)",
+        "surfaceSolid": "#ffffff",
+        "surfaceSecondary": "#eef3fb",
+        "text": "#111827",
+        "muted": "#56657a",
+        "mutedSecondary": "#7a8798",
+        "line": "rgba(36, 50, 75, .11)",
+        "lineStrong": "rgba(36, 50, 75, .18)",
+        "primary": "#6d4aff",
+        "secondary": "#0284c7",
+        "tertiary": "#059669",
+        "success": "#16a36f"
+      }
+    },
+    "typography": {
+      "bodyFont": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "headingFont": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "monoFont": "ui-monospace, SFMono-Regular, Menlo, monospace",
+      "baseSize": "16px",
+      "lineHeight": "1.65",
+      "headingWeight": "800",
+      "letterSpacing": "-0.02em",
+      "fontStylesheet": ""
+    },
+    "layout": {
+      "containerWidth": "1180px",
+      "headerHeight": "78px",
+      "sectionSpacing": "116px",
+      "gridGap": "18px",
+      "projectColumns": 2,
+      "projectMinHeight": "430px"
+    },
+    "shape": {
+      "radiusXL": "28px",
+      "radiusLG": "20px",
+      "radiusMD": "14px",
+      "buttonRadius": "13px"
+    },
+    "effects": {
+      "shadow": "0 30px 80px rgba(0,0,0,.32)",
+      "lightShadow": "0 24px 70px rgba(21,37,68,.12)",
+      "glassBlur": "18px",
+      "hoverLift": "5px",
+      "noiseOpacity": "0.035",
+      "auroraOpacity": "0.12",
+      "motionDuration": "250ms"
+    },
+    "components": {
+      "surfaceStyle": "glass",
+      "buttonStyle": "gradient",
+      "shapeStyle": "rounded",
+      "motion": "full"
+    }
+  },
+  "projects": [
+    {
+      "title": "StockGenie",
+      "category": "systems",
+      "featured": true,
+      "eyebrow": "Inventory & POS System",
+      "description": "Inventory and point-of-sale system for small businesses, combining stock control, checkout workflows, authentication, searchable data tables and PDF reporting.",
+      "stack": [
+        "Laravel 11",
+        "PHP 8.2",
+        "Bootstrap",
+        "jQuery",
+        "DataTables",
+        "dompdf"
+      ],
+      "code": "https://github.com/Abu-Salah-Musha-Lemon/StockGenie",
+      "accent": "violet",
+      "caseStudy": "project.html?project=stockgenie",
+      "slug": "stockgenie",
+      "caseStudyData": {
+        "slug": "stockgenie",
+        "year": "2024",
+        "role": "Full-stack developer",
+        "status": "Project case study",
+        "focus": "Product + Engineering",
+        "lead": "A Laravel-based inventory and point-of-sale system that brings stock management, sales transactions, reporting and day-to-day administration into one responsive workflow.",
+        "sections": [
+          {
+            "kicker": "01 · Context",
+            "title": "The problem",
+            "paragraphs": [
+              "Small businesses need a simple way to keep products, stock levels and sales transactions synchronized without the overhead of enterprise software.",
+              "StockGenie brings those core operations into a focused administrative workflow built for everyday use."
+            ]
+          },
+          {
+            "kicker": "02 · Approach",
+            "title": "How it was approached",
+            "paragraphs": [
+              "The application centers the experience around inventory and checkout. Laravel handles application structure and authentication, while Bootstrap, DataTables and notification components support efficient administration."
+            ],
+            "cards": [
+              {
+                "title": "Inventory management",
+                "description": "Manage product details, categories and stock levels while maintaining inventory records."
+              },
+              {
+                "title": "POS workflow",
+                "description": "Process sales through a checkout flow with inventory updates."
+              },
+              {
+                "title": "Reporting",
+                "description": "Generate downloadable PDF reports for sales, inventory and business metrics."
+              },
+              {
+                "title": "Data operations",
+                "description": "Use sortable and searchable DataTables to make administrative data easier to work with."
+              }
+            ]
+          },
+          {
+            "kicker": "03 · Technology",
+            "title": "Implementation stack",
+            "paragraphs": [
+              "The implementation combines a Laravel backend with responsive administration components, searchable data tables and PDF reporting."
+            ],
+            "stack": [
+              "Laravel 11",
+              "PHP 8.2",
+              "Bootstrap",
+              "JavaScript",
+              "jQuery DataTables",
+              "Laravel Breeze",
+              "dompdf",
+              "Shopping Cart",
+              "Toastr"
+            ]
+          },
+          {
+            "kicker": "04 · Reflection",
+            "title": "What this project demonstrates",
+            "paragraphs": [
+              "StockGenie demonstrates end-to-end Laravel application development across authentication, transaction-oriented workflows, reporting, data management and responsive business UI.",
+              "Future improvements can include broader automated testing, deployment automation and deeper usability evaluation."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "E-Commerce Platform",
+      "category": "web",
+      "featured": true,
+      "eyebrow": "Laravel Commerce Application",
+      "description": "Laravel e-commerce application with catalog management, authentication, order processing, inventory visibility, role-aware administration and manual payment workflows.",
+      "stack": [
+        "Laravel",
+        "PHP",
+        "Blade",
+        "Bootstrap 5",
+        "DataTables",
+        "Laratrust"
+      ],
+      "code": "https://github.com/Abu-Salah-Musha-Lemon/e-commerce-app",
+      "accent": "cyan",
+      "caseStudy": "project.html?project=ecommerce-platform",
+      "slug": "ecommerce-platform",
+      "caseStudyData": {
+        "slug": "ecommerce-platform",
+        "year": "2024",
+        "role": "Full-stack developer",
+        "status": "Project case study",
+        "focus": "Product + Engineering",
+        "lead": "A Laravel commerce platform for small businesses that combines product administration, customer ordering, inventory visibility and controlled back-office workflows.",
+        "sections": [
+          {
+            "kicker": "01 · Context",
+            "title": "The problem",
+            "paragraphs": [
+              "Running a small online store requires reliable catalog administration, inventory visibility and an order workflow that stays manageable for a small team.",
+              "The platform brings storefront activity and administrative control into a structured Laravel application."
+            ]
+          },
+          {
+            "kicker": "02 · Approach",
+            "title": "How it was approached",
+            "paragraphs": [
+              "Customer ordering and administrative management are separated into clear workflows, with Laravel handling application logic, MySQL persistence and authentication/permission controls."
+            ],
+            "cards": [
+              {
+                "title": "Catalog management",
+                "description": "Add, edit, update and delete products, categories and subcategories."
+              },
+              {
+                "title": "Inventory awareness",
+                "description": "Surface sales totals, current inventory levels and low-stock alerts."
+              },
+              {
+                "title": "Order lifecycle",
+                "description": "Allow customers to place orders while administrators complete or cancel them."
+              },
+              {
+                "title": "Access control",
+                "description": "Use Breeze authentication and Laratrust roles/permissions as the basis for protected workflows."
+              }
+            ]
+          },
+          {
+            "kicker": "03 · Technology",
+            "title": "Implementation stack",
+            "paragraphs": [
+              "The implementation uses Laravel, MySQL and Bootstrap with authentication, permissions, searchable data tables and notification components."
+            ],
+            "stack": [
+              "Laravel 11",
+              "PHP 8.2",
+              "MySQL",
+              "Bootstrap",
+              "JavaScript",
+              "jQuery",
+              "DataTables",
+              "Laravel Breeze",
+              "Laratrust",
+              "Toastr"
+            ]
+          },
+          {
+            "kicker": "04 · Reflection",
+            "title": "What this project demonstrates",
+            "paragraphs": [
+              "The project demonstrates practical commerce architecture, CRUD-intensive administration and role-aware workflows for products, inventory and orders.",
+              "Future improvements can include online payment integration, automated testing and production deployment hardening."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Hospital Management System",
+      "category": "web",
+      "featured": false,
+      "eyebrow": "Front-End Web Project",
+      "description": "Responsive multi-page healthcare interface exploring clear navigation, role-oriented information and structured presentation for hospital services and administration.",
+      "stack": [
+        "HTML",
+        "CSS"
+      ],
+      "demo": "https://abu-salah-musha-lemon.github.io/Hospital-Management-System/",
+      "code": "https://github.com/Abu-Salah-Musha-Lemon/Hospital-Management-System",
+      "accent": "blue",
+      "caseStudy": "project.html?project=hospital-management",
+      "slug": "hospital-management",
+      "caseStudyData": {
+        "slug": "hospital-management",
+        "year": "2022–2023",
+        "role": "Front-end / web developer",
+        "status": "Project case study",
+        "focus": "Product + Engineering",
+        "lead": "A multi-page hospital-management interface exploring navigation, doctor and administration views, and structured presentation of healthcare information.",
+        "sections": [
+          {
+            "kicker": "01 · Context",
+            "title": "The problem",
+            "paragraphs": [
+              "Healthcare interfaces bring together many roles, services and information types, making clear navigation and information hierarchy essential.",
+              "This project explores those needs through a structured multi-page interface."
+            ]
+          },
+          {
+            "kicker": "02 · Approach",
+            "title": "How it was approached",
+            "paragraphs": [
+              "The interface separates administrative and doctor-oriented areas while maintaining consistent navigation and visual structure across pages."
+            ],
+            "cards": [
+              {
+                "title": "Information architecture",
+                "description": "Organize hospital content into understandable sections and navigation."
+              },
+              {
+                "title": "Role-oriented pages",
+                "description": "Explore distinct admin and doctor-facing areas in the repository structure."
+              },
+              {
+                "title": "Responsive presentation",
+                "description": "Present the public-facing experience in a browser-accessible format."
+              },
+              {
+                "title": "Iterative learning",
+                "description": "Use the project as a foundation for learning how larger operational systems are structured."
+              }
+            ]
+          },
+          {
+            "kicker": "03 · Technology",
+            "title": "Implementation stack",
+            "paragraphs": [
+              "The project uses front-end web technologies to organize a multi-page healthcare experience with responsive layouts and structured content."
+            ],
+            "stack": [
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "PHP",
+              "Responsive Web"
+            ]
+          },
+          {
+            "kicker": "04 · Reflection",
+            "title": "What this project demonstrates",
+            "paragraphs": [
+              "This project represents an earlier stage of my web-development work and shows progression toward more complete full-stack business applications.",
+              "Future improvements can include a production backend, stronger accessibility, automated testing and more formal usability evaluation."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "NU CSE",
+      "category": "web",
+      "featured": false,
+      "eyebrow": "Academic Information Experience",
+      "description": "Responsive academic information website using Bootstrap, JavaScript and JSON-backed content to organize CSE resources in a clear, accessible interface.",
+      "stack": [
+        "Bootstrap",
+        "JavaScript",
+        "JSON"
+      ],
+      "demo": "https://abu-salah-musha-lemon.github.io/ASML-NU-CSE/",
+      "code": "https://github.com/Abu-Salah-Musha-Lemon",
+      "accent": "emerald",
+      "slug": "nu-cse"
+    },
+    {
+      "title": "Web UI Collection",
+      "category": "web",
+      "featured": false,
+      "eyebrow": "Responsive Interface Experiments",
+      "description": "A curated set of responsive front-end builds exploring landing pages, Bootstrap layouts, reusable components and interface composition.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "jQuery"
+      ],
+      "demo": "https://abu-salah-musha-lemon.github.io/website-templates/",
+      "code": "https://github.com/Abu-Salah-Musha-Lemon",
+      "accent": "amber",
+      "slug": "web-ui-collection"
+    },
+    {
+      "title": "Food App POS UI",
+      "category": "systems",
+      "featured": false,
+      "eyebrow": "Point-of-Sale Interface",
+      "description": "Point-of-sale interface concept focused on fast menu browsing, order composition and a clear transaction flow for food-service environments.",
+      "stack": [
+        "HTML",
+        "CSS"
+      ],
+      "demo": "https://abu-salah-musha-lemon.github.io/website-templates/pos2/index.html",
+      "code": "https://github.com/Abu-Salah-Musha-Lemon",
+      "accent": "rose",
+      "slug": "food-app-pos-ui"
+    }
+  ],
+  "creative": [
+    {
+      "title": "TELCo Branding & Promotional Materials",
+      "type": "Brand Design",
+      "url": "https://www.behance.net/gallery/217638041/TELCo-Branding-and-Promotional-Materials"
+    },
+    {
+      "title": "TELCo Bottle Label Design",
+      "type": "Packaging & Label",
+      "url": "https://www.behance.net/gallery/235140961/TELCo-Bottle-Label-Design"
+    },
+    {
+      "title": "Facebook Poster — Ideal College Dhanmondi",
+      "type": "Social Media Design",
+      "url": "https://www.behance.net/gallery/213940355/Facebook-Poster-Design-for-Ideal-College-Dhanmondi"
+    },
+    {
+      "title": "May Day Poster Design — 2025",
+      "type": "Poster Design",
+      "url": "https://www.behance.net/gallery/224855307/May-Day-Poster-Design-2025"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Web Engineering",
+      "items": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "PHP",
+        "Laravel",
+        "Bootstrap",
+        "jQuery",
+        "MySQL",
+        "WordPress"
+      ]
+    },
+    {
+      "title": "Programming",
+      "items": [
+        "C",
+        "Java",
+        "PHP",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Design & Creative",
+      "items": [
+        "Figma",
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Canva",
+        "Blender 3D",
+        "AI-assisted creative workflows"
+      ]
+    },
+    {
+      "title": "Tools & Workflow",
+      "items": [
+        "Git",
+        "GitHub",
+        "VS Code",
+        "DataTables",
+        "Microsoft Office",
+        "Google Workspace"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "period": "Nov 2024 — Jan 2026",
+      "role": "Admin & IT Coordinator",
+      "company": "Total Engineering and Lifestyle Amenities Co. (TELCo)",
+      "companyUrl": "https://www.telco.com.bd",
+      "details": [
+        "Coordinated company IT infrastructure, network support and day-to-day digital operations.",
+        "Built and maintained the company website using WordPress and Divi.",
+        "Created brand and marketing assets including brochures, billboards, catalogs, packaging labels and social media graphics.",
+        "Worked across administration, marketing and engineering teams to keep digital operations and brand execution consistent."
+      ]
+    },
+    {
+      "period": "2023 — 2024",
+      "role": "Full-Stack Developer",
+      "company": "Independent Software Projects",
+      "details": [
+        "Developed inventory, POS and e-commerce applications using Laravel, PHP and MySQL.",
+        "Implemented authentication, responsive dashboards, notifications, reporting and data-management workflows.",
+        "Focused on maintainable application structure, clear interfaces and practical small-business use cases."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "program": "MSc in Computer Science & Engineering",
+      "institution": "Jagannath University",
+      "status": "Ongoing"
+    },
+    {
+      "program": "BSc in Computer Science & Engineering",
+      "institution": "National University, Bangladesh",
+      "status": "Completed"
+    }
+  ],
+  "certifications": [
+    "UI/UX Design with Figma — 5+ Real World Projects (Udemy)",
+    "Graphic Design with Canva & Freelancing (Udemy)",
+    "Microsoft Designer Masterclass: AI-based Design (Udemy)",
+    "Career Essentials in Generative AI — Microsoft & LinkedIn",
+    "Career Essentials in Software Development — Microsoft & LinkedIn"
+  ],
+  "research": {
+    "intro": "My current research interests sit at the intersection of applied AI, human-centered systems and creative technology. I focus on practical experimentation, reproducible workflows and digital products that improve how people work and communicate.",
+    "directions": [
+      {
+        "title": "AI-Assisted Creative Systems",
+        "status": "Research interest",
+        "description": "Exploring how multimodal AI can support product visualization, creative prototyping and visual production while maintaining brand and product consistency.",
+        "tags": [
+          "Generative AI",
+          "Multimodal workflows",
+          "Creative tooling"
+        ]
+      },
+      {
+        "title": "Human-Centered Business Software",
+        "status": "Research interest",
+        "description": "Studying how inventory, POS and commerce systems can reduce operational friction through clearer interfaces, better information hierarchy and practical automation.",
+        "tags": [
+          "HCI",
+          "Information systems",
+          "Workflow design"
+        ]
+      },
+      {
+        "title": "Responsible AI Workflows",
+        "status": "Research interest",
+        "description": "Exploring repeatable ways to combine source assets, prompt design and generative tools while preserving traceability, human oversight and creative control.",
+        "tags": [
+          "Responsible AI",
+          "Evaluation",
+          "Human-in-the-loop"
+        ]
+      }
+    ],
+    "explorations": [
+      {
+        "title": "AI-Powered Product Visualization & Commercial Production",
+        "type": "Applied exploration",
+        "description": "An applied workflow combining original product assets, AI-assisted visual development and AI video generation to examine consistency across a multi-tool creative pipeline.",
+        "url": "https://www.linkedin.com/posts/abu-salah-musha-lemon_ai-generativeai-aicreative-activity-7501634021806968833-HUz_"
+      }
+    ],
+    "publicationNote": ""
+  },
+  "media": {
+    "intro": "Selected videos, audio, presentations and published materials.",
+    "items": [],
+    "settings": {
+      "showFilters": true,
+      "lazyEmbeds": true,
+      "showProvider": true,
+      "showOpenOriginal": true
+    }
+  },
+  "site": {
+    "title": "Abu Salah Musha Lemon — Full-Stack Developer & Creative Technologist",
+    "description": "Portfolio of Abu Salah Musha Lemon, a full-stack developer and creative technologist in Dhaka working across Laravel/PHP systems, responsive web experiences, product design and applied AI.",
+    "themeColor": "#07111f",
+    "copyrightName": "Abu Salah Musha Lemon",
+    "navigation": [
+      {
+        "label": "About",
+        "target": "about"
+      },
+      {
+        "label": "Experience",
+        "target": "experience"
+      },
+      {
+        "label": "Education",
+        "target": "education"
+      },
+      {
+        "label": "Projects",
+        "target": "work"
+      },
+      {
+        "label": "Research",
+        "target": "research"
+      },
+      {
+        "label": "Skills",
+        "target": "skills"
+      },
+      {
+        "label": "Contact",
+        "target": "contact"
+      }
+    ],
+    "focusAreas": [
+      "Laravel & PHP",
+      "Business Systems",
+      "Product UI",
+      "Responsive Web",
+      "Brand Design",
+      "Creative Technology",
+      "Applied AI"
+    ],
+    "sections": {
+      "about": {
+        "eyebrow": "About",
+        "title": "Engineering practical systems with a strong visual perspective.",
+        "description": ""
+      },
+      "experience": {
+        "eyebrow": "Experience",
+        "title": "Experience across software, IT operations and visual communication.",
+        "description": "A multidisciplinary background shaped by real operational needs, business workflows and digital delivery."
+      },
+      "work": {
+        "eyebrow": "Selected projects",
+        "title": "Software built around practical workflows and clear interfaces.",
+        "description": "A selection of full-stack systems, web applications and interface projects."
+      },
+      "creative": {
+        "eyebrow": "Creative work",
+        "title": "Visual design supporting brands, products and communication.",
+        "description": "Selected branding, packaging and promotional work."
+      },
+      "research": {
+        "eyebrow": "Research interests",
+        "title": "Applied AI, human-centered systems and responsible digital workflows.",
+        "description": ""
+      },
+      "media": {
+        "eyebrow": "Media",
+        "title": "Selected published media and presentations.",
+        "description": ""
+      },
+      "skills": {
+        "eyebrow": "Capabilities",
+        "title": "A practical stack across software engineering and visual production.",
+        "description": ""
+      },
+      "learning": {
+        "eyebrow": "Professional development",
+        "title": "Continuous learning across software, design and AI.",
+        "description": "Selected certifications and structured learning."
+      },
+      "contact": {
+        "eyebrow": "Contact",
+        "title": "Let’s build something useful.",
+        "description": "For software, web, design or creative-technology opportunities, feel free to get in touch."
+      },
+      "education": {
+        "eyebrow": "Education",
+        "title": "Academic foundation in computer science and engineering.",
+        "description": ""
+      }
+    },
+    "sectionOrder": [
+      "home",
+      "about",
+      "experience",
+      "education",
+      "work",
+      "creative",
+      "research",
+      "media",
+      "skills",
+      "learning",
+      "contact"
+    ],
+    "hiddenSections": [
+      "media"
+    ],
+    "alternateSectionBackgrounds": true,
+    "autoSectionNumbers": true
+  },
+  "aboutFacts": [
+    {
+      "label": "Education",
+      "value": "MSc CSE — Jagannath University (ongoing)"
+    },
+    {
+      "label": "Background",
+      "value": "BSc CSE — National University, Bangladesh"
+    },
+    {
+      "label": "Focus",
+      "value": "Full-stack development, product UI, creative technology"
+    },
+    {
+      "label": "Location",
+      "value": "Dhaka, Bangladesh"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "repoCount",
+      "value": "51",
+      "label": "Public repositories",
+      "dynamic": "github.public_repos"
+    },
+    {
+      "value": "6",
+      "label": "Selected projects"
+    },
+    {
+      "value": "5",
+      "label": "Professional certificates"
+    },
+    {
+      "value": "3",
+      "label": "Core disciplines"
+    }
+  ],
+  "contact": {
+    "headline": "Let’s build something useful.",
+    "description": "For software, web, design or creative-technology opportunities, feel free to get in touch.",
+    "email": "lemonahmed512@gmail.com",
+    "location": "Dhaka, Bangladesh",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/Abu-Salah-Musha-Lemon"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/abu-salah-musha-lemon/"
+      },
+      {
+        "label": "Behance",
+        "url": "https://www.behance.net/abu-salah-musha"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/channel/UCuJrVADp9B0T9AIadz2eAVw"
+      }
+    ]
+  }
+}

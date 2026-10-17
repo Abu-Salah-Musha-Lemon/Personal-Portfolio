@@ -1,0 +1,54 @@
+{
+  "purpose": "Media renderer examples for development/testing. These items are not part of the public portfolio content.",
+  "items": [
+    {
+      "title": "YouTube Video — Compatibility Playback Test",
+      "url": "https://www.youtube.com/watch?v=B2xCioFEeCQ",
+      "sourceUrl": "https://www.youtube.com/watch?v=B2xCioFEeCQ",
+      "embedUrl": "https://www.youtube.com/embed/B2xCioFEeCQ",
+      "alternateEmbedUrl": "https://www.youtube-nocookie.com/embed/B2xCioFEeCQ",
+      "platform": "YouTube",
+      "description": "Standard YouTube embed is used first, with the site origin added automatically. Privacy-enhanced YouTube is available as a fallback. If this specific video is blocked by its owner, use Open original.",
+      "kind": "video",
+      "featured": true,
+      "date": "2026",
+      "tags": [
+        "Video",
+        "YouTube",
+        "Exact Embed",
+        "Playback Test"
+      ]
+    },
+    {
+      "title": "Free — Elektronomia & JJD [NCS Release]",
+      "url": "https://ncs.io/track/download/e129ae98-f110-496c-8490-5dd339f63914",
+      "sourceUrl": "https://ncs.io/free",
+      "platform": "NCS",
+      "description": "Native HTML5 audio-player test using the official NCS audio/mpeg download endpoint for “Free” by Elektronomia & JJD.",
+      "kind": "audio",
+      "date": "2026",
+      "tags": [
+        "Audio",
+        "NCS",
+        "HTML5 Audio",
+        "Playback Test"
+      ]
+    },
+    {
+      "title": "Developer Desk — Pexels Image Test",
+      "url": "https://images.pexels.com/photos/14016664/pexels-photo-14016664.jpeg?auto=compress&dpr=1&h=750&w=1260",
+      "sourceUrl": "https://www.pexels.com/photo/computer-set-up-on-the-table-14016664/",
+      "platform": "Pexels",
+      "description": "Responsive image-card test using the official Pexels image asset for a minimalist developer desk setup.",
+      "kind": "image",
+      "alt": "Minimalist home office developer desk with monitor, laptop and gadgets",
+      "date": "2026",
+      "tags": [
+        "Image",
+        "Pexels",
+        "Responsive Media",
+        "UI Test"
+      ]
+    }
+  ]
+}
