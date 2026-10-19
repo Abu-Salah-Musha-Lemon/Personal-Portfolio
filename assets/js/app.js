@@ -124,7 +124,7 @@
     setText('brandSubtitle', (p.roles || []).slice(0, 2).join(' × ') || 'Developer × Designer');
     const email = p.email || data.contact?.email || '';
     const cta = $('headerCta');
-    if (cta && email) cta.href = `mailto:${encodeURIComponent(email)}`;
+    if (cta && email) cta.href = `mailto:${email}`;
 
     const socialLinks = [
       ['LinkedIn', p.linkedin], ['Behance', p.behance], ['YouTube', p.youtube]
@@ -138,11 +138,12 @@
       <div class="hero-copy reveal">
         <div class="availability"><span class="status-dot"></span>${text(p.availability || '')}</div>
         <p class="eyebrow">${text(p.eyebrow || (p.roles || []).join(' · '))}</p>
-        <h2 id="heroTitle">${text(p.headline || p.name || '')}</h2>
+        <h1 id="heroTitle">${text(p.headline || p.name || '')}</h1>
         <p class="hero-lead">${text(p.lead || '')}</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#work">Explore selected work <span aria-hidden="true">↗</span></a>
           ${github ? `<a class="btn btn-secondary" href="${text(github)}" target="_blank" rel="noopener noreferrer">View GitHub</a>` : ''}
+          ${p.cvUrl ? `<a class="btn btn-secondary btn-cv" href="${text(p.cvUrl)}" download>Download CV</a>` : ''}
         </div>
         <div class="social-row" aria-label="Social links">${socialHtml}</div>
       </div>
@@ -202,6 +203,7 @@
   const renderProjects = (items = []) => {
     $('projectGrid').innerHTML = items.map((item, index) => `
       <article class="project-card reveal" data-category="${text(item.category || '')}" data-accent="${text(item.accent || 'violet')}" style="transition-delay:${Math.min(index * .05, .25)}s">
+        ${item.image ? `<div class="project-cover"><img src="${text(item.image)}" alt="${text(item.title || '')} preview" loading="lazy" width="640" height="360" onerror="this.parentElement.remove()"></div>` : ''}
         <div class="project-top"><div><div class="project-type">${text(item.eyebrow || '')}</div><h3>${text(item.title || '')}</h3></div><span class="project-number">${String(index + 1).padStart(2, '0')}</span></div>
         <p>${text(item.description || '')}</p>
         <div class="tech-list">${(item.stack || []).map(t => `<span class="tech">${text(t)}</span>`).join('')}</div>
@@ -216,8 +218,8 @@
 
   const renderCreative = (items = []) => {
     $('creativeGrid').innerHTML = items.map((item, index) => `
-      <a class="creative-card reveal" href="${text(href(item.url) || '#')}" ${href(item.url) ? 'target="_blank" rel="noopener noreferrer"' : ''} style="transition-delay:${Math.min(index * .06, .2)}s">
-        <div class="creative-icon">${String(index + 1).padStart(2, '0')}</div><div><span>${text(item.type || '')}</span><h3>${text(item.title || '')}</h3></div>
+      <a class="creative-card reveal${item.image ? ' has-image' : ''}" href="${text(href(item.url) || '#')}" ${href(item.url) ? 'target="_blank" rel="noopener noreferrer"' : ''} style="transition-delay:${Math.min(index * .06, .2)}s">
+        ${item.image ? `<div class="creative-thumb"><img src="${text(item.image)}" alt="${text(item.title || '')}" loading="lazy" onerror="this.parentElement.remove()"></div>` : `<div class="creative-icon">${String(index + 1).padStart(2, '0')}</div>`}<div class="creative-body"><span>${text(item.type || '')}</span><h3>${text(item.title || '')}</h3></div>
       </a>`).join('');
   };
 
@@ -285,7 +287,7 @@
     const links = contact.links || [];
     const headline = contact.headline || section.title || 'Let’s work together.';
     const description = contact.description || section.description || '';
-    $('contactContent').innerHTML = `<div class="contact-card reveal"><div><p class="eyebrow">${text(section.eyebrow || 'Contact')}</p><h2>${text(headline)}</h2><p>${text(description)}</p></div><div class="contact-actions">${email ? `<a class="btn btn-light" href="mailto:${text(email)}">Send email ↗</a><button class="btn btn-ghost-light" id="copyEmail" type="button" data-email="${text(email)}">Copy email</button>` : ''}</div><div class="contact-meta">${email ? `<a href="mailto:${text(email)}">${text(email)}</a>` : ''}<span>${text(contact.location || profile.location || '')}</span></div><div class="footer-links contact-links">${links.filter(l => href(l.url)).map(l => `<a href="${text(href(l.url))}" target="_blank" rel="noopener noreferrer">${text(l.label)}</a>`).join('')}</div></div>`;
+    $('contactContent').innerHTML = `<div class="contact-card reveal"><div><p class="eyebrow">${text(section.eyebrow || 'Contact')}</p><h2>${text(headline)}</h2><p>${text(description)}</p></div><div class="contact-actions">${email ? `<a class="btn btn-light" href="mailto:${text(email)}">Send email ↗</a>${profile.cvUrl ? `<a class="btn btn-ghost-light" href="${text(profile.cvUrl)}" download>Download CV</a>` : ''}<button class="btn btn-ghost-light" id="copyEmail" type="button" data-email="${text(email)}">Copy email</button>` : ''}</div><div class="contact-meta">${email ? `<a href="mailto:${text(email)}">${text(email)}</a>` : ''}<span>${text(contact.location || profile.location || '')}</span></div><div class="footer-links contact-links">${links.filter(l => href(l.url)).map(l => `<a href="${text(href(l.url))}" target="_blank" rel="noopener noreferrer">${text(l.label)}</a>`).join('')}</div></div>`;
     $('copyEmail')?.addEventListener('click', async e => {
       const value = e.currentTarget.dataset.email || '';
       try { await navigator.clipboard.writeText(value); showToast('Email copied to clipboard'); }

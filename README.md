@@ -380,3 +380,11 @@ If you copy a URL from iframe HTML with `&amp;`, the site now normalizes it to `
 This build uses the standard `youtube.com/embed/...` player as the primary YouTube embed, adds the current hosted site origin automatically, keeps `strict-origin-when-cross-origin`, and loads YouTube only after the visitor clicks **Play video**. The click-to-play approach improves compatibility with browser autoplay/privacy rules.
 
 If a particular YouTube video has **Allow embedding** disabled, is age-restricted, or is blocked by the viewer's network/region, no portfolio code can force it to play. The media card therefore always keeps an **Open on YouTube** fallback.
+
+
+# v5 notes
+
+- Project cards read an optional `image` field. The current files in `assets/img/projects/` are generated wireframe covers. Replace each with a real screenshot (16:9) and keep the same path, or change the `image` value in `data/content.json`.
+- Creative cards also read an optional `image` field. Save a thumbnail (4:3) in `assets/img/creative/` and set `"image": "assets/img/creative/name.jpg"` on each item.
+- `profile.cvUrl` points to `assets/Abu-Salah-Musha-Lemon-CV.pdf`. This PDF was generated from the site content. Replace it with your own CV if you have one, keeping the file name.
+- Inter is now loaded from Google Fonts in every page head.

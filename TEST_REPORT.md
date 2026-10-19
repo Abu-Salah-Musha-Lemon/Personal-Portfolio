@@ -1,27 +1,10 @@
-# Final Professional Portfolio — Test Report
+# v5 Test Report
 
-## Content cleanup
-
-- Removed public-facing test/debug wording.
-- Removed YouTube/NCS/Pexels test items from production content.
-- Preserved media test samples in `data/media-examples.json`.
-- Added a dedicated Education section.
-- Rewrote profile, experience, project, research, contact and section copy for a concise professional tone.
-- Removed empty publication messaging from the rendered UI.
-- Hid the Media section until genuine published material is added.
-
-## Validation results
-
-- `data/content.json`: PASS
-- JavaScript syntax: PASS
-- Core media/link unit tests: PASS
-- Local HTML/CSS/JS references: PASS
-- Dynamic CSS variable sanity: PASS
-- Project slugs/case-study structure: PASS
-- Education navigation/section configuration: PASS
-- Production/demo media separation: PASS
-- HTTP checks for index, project, research, media, JSON, JS and CSS: HTTP 200
-
-## Deployment
-
-The project is suitable for static hosting such as GitHub Pages. Upload the contents of the project folder to the repository root and publish from the root of the selected branch.
+- tools/validate.py: PASS
+- tools/test_core.js: PASS
+- JavaScript syntax (app, core, library, project): PASS
+- Hero headline height at 1366px: 727px before, 357px after
+- Mobile (390px): no horizontal scroll, hero text fits
+- Header at 1366, 1100 and 1024px: no overflow
+- All 6 project cover images load
+- Download CV links resolve to assets/Abu-Salah-Musha-Lemon-CV.pdf
